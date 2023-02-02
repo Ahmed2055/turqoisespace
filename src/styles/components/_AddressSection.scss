@@ -1,0 +1,37 @@
+@media (max-width: 990px) {
+
+}
+
+@media (min-width: 990px) {
+
+}
+
+@media (min-width: 1150px){
+
+}
+
+
+.addressSection{
+    @extend .flowRow ;
+    padding: 10px 5% ;
+    font-size: 0.9em ;
+    .hoverBlack{
+        
+        &:hover{
+            color:black ;
+        }
+    }
+    .addressSection__address{
+        @extend .flowRow ;
+        margin: 0 0.7% ;
+        text-decoration: none ;
+        color: $darkGrayColor ;
+        .addressSection__icon{
+            margin-left: 5px;
+            color: inherit ;
+        }
+        .addressSection__text{
+            color: inherit ;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@media (max-width: 990px) {
+
+}
+
+@media (min-width: 990px) {
+
+}
+
+@media (min-width: 1150px){
+
+}
+
+.cartItems{
+    @extend .flowColumn ;
+    
+    .cartItems__location{
+        @extend .flowColumn ;
+        width:50% ;
+        min-width:280px ;
+        position:relative ;
+        z-index:-1 ;
+        .cartItems__locationTop{
+            @extend .flowRow ;
+            justify-content: space-between;
+            width:100% ;
+            .cartItems__locationTopRight{
+                z-index: 3;
+                color: $DarkMainColor ;
+                background-color:white ;
+                margin:0;
+            }
+            .cartItems__locationTopLine{
+                position:absolute ;
+                border: 1px double $DarkMainColor ;
+                width:96% ;
+                margin: 0 2% ;
+                
+            }
+            .cartItems__locationTopLeft{
+                border: 2px solid $DarkMainColor ;
+                border-radius: 100% ; 
+                width:26px ;
+                height:26px ;
+                @extend .flowRow ;
+                justify-content: center ;
+                z-index: 3;
+                background-color: white;
+                .cartItems__locationTopLeftNumber{
+                    text-align:center ;
+                    color: $DarkMainColor ;
+                }
+            }
+        }
+        .cartItems__locationBottom{
+            @extend .flowRow ;
+            justify-content: space-between;
+            width:100% ;
+            margin: 0;
+            .cartItems__locationBottomRight{
+                margin: 0;
+                font-family: $mainFontColor ;
+                color: $DarkMainColor ;
+            }
+            .cartItems__locationBottomLeft{
+                margin: 0;
+                font-family: $mainFontColor ;
+                color: $DarkMainColor ;
+            }
+        }
+    }
+    .cartItems__empty{
+        @extend .flowColumn ;
+        font-size: 8em;
+        margin:5vh 10% 2vh 10%;
+        color:$darkGrayColor ;
+        .cartItems__emptyText{
+            text-align: center;
+            font-size:24px ;
+            font-family: $mainFontColor ;
+            color: inherit ;
+        }
+    }
+    .cartItems__buttonDiv{
+        
+        .cartItems__button{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin: 2vh 10% ;    
+            width: 20% ;
+            min-width:150px ;
+            background-color: $DarkMainColor ;
+            @extend .flowRow ;
+            justify-content: space-around;
+            border-radius: 10px ;
+            color:white ;
+            text-decoration: none ;
+            cursor: pointer ;
+            .cartItems__ButtonText{
+                color:white ;
+                font-family: $mainFontColor ;    
+                font-size:1.3em ;
+                
+            }
+        }   
+    }
+    
+    
+}
+
+ 

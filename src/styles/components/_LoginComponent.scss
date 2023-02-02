@@ -1,0 +1,115 @@
+
+@media (max-width: 990px) {
+    .loginComponent{
+        .loginBox{
+            padding: 1% 10px !important ;
+        }
+        .loginBox__bottomQuestionSide{
+            width: 80px !important;
+        }
+        .loginBox__Option{
+            min-width:100px !important ;
+        }
+    }
+}
+
+
+
+
+.loginComponent{
+    position:fixed ;
+    top:0 ;
+    left:0 ;
+    width:100vw ;
+    height: 100vh ;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    z-index:9999 !important;
+    .loginBox{
+        width: 80% ;
+        max-width:500px ;
+        min-width:330px ;
+        background-color: white ;
+        min-height:100px ;
+        margin: 20vh auto auto auto;
+        border-radius: 20px ;
+        padding: 1% 2% ;
+        
+        .loginBox__closeDiv{
+            color: $darkGrayColor ;
+            &:hover {
+                color: black ;
+            }
+        }
+        .loginBox__contentDiv{
+            @extend .flowColumn ;
+            .loginBox__top{
+                @extend .flowColumn ;
+                justify-content: baseline ;
+                color: $DarkMainColor;
+                font-size: 4em ;
+                .loginBox__image{
+                    width: 100px ;
+                    height:100px ;
+                    object-fit: contain ;
+                    margin: 0;
+                    color: $DarkMainColor;
+                }
+                .loginBox__topText{
+                    font-size: 0.25em;
+                    color: $DarkMainColor;
+                    font-family: $mainFontColor;
+                }
+            }
+            .loginBox__bottom{
+                @extend .flowColumn ;
+                margin :3vh auto auto auto ;
+                .loginBox__bottomQuestion{
+                    @extend .flowRow ;
+                    width: 100% ;
+                    color: $DarkMainColor;
+                    .loginBox__bottomQuestionSide{
+                        border-bottom: 1px solid $DarkMainColor;
+                        width: 120px ;
+                    }
+                    .loginBox__bottomQuestionText{
+                        margin: 0 15px ;
+                        text-align: center ;
+                        font-family: $mainFontColor;
+                    }
+                }
+                .loginBox__bottomOptions{
+                    @extend .flowRow ;
+                    justify-content: space-around;
+                    margin :3vh auto auto auto ;
+                    width:100% ;
+                    .loginBox__Option{
+                        @extend .flowColumn ;
+                        align-items: center ;
+                        width: 90% ;
+                        min-width:150px ;
+                        margin: 5px 2% 15px 2% ;
+                        border: 1px solid $DarkMainColor ;
+                        border-radius: 20px ;
+                        padding: 15px 3% ;
+                        color: $DarkMainColor;
+                        cursor: pointer;
+                        background-color: white ;
+                        &:hover{
+                            background-color: $DarkMainColor ;
+                            color: white ;
+                        }
+                        .loginBox__OptionText{
+                            text-align:center ;
+                            font-family: $mainFontColor;
+                            color:inherit;
+                            font-weight:500 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

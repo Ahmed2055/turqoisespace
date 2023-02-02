@@ -1,0 +1,58 @@
+$mainColor : rgb(82, 195, 191);
+$DarkMainColor : rgb(52, 162, 158);
+$hoverColor: rgb(83, 117, 150) ;
+$darkGrayColor: rgb(110, 110, 110) ;
+$lightGrayColor: rgb(240, 240, 240) ;
+$mainFontColor: Amiri;
+
+
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    visibility: none;
+}
+
+.flowRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flowColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back{
+    background-color: rgb(0, 54, 141);
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.verticallyBordered{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 50px;
+}
+
+.centerTextAlign{
+    text-align: center !important;
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (min-width: 990px) {
+
+}
+
+@media (min-width: 1150px){
+
+}

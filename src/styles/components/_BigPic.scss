@@ -1,0 +1,19 @@
+
+.bigPic{
+
+    margin: 0;
+    width: 100% ;
+    vertical-align:top ;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start !important;
+    height:auto ;
+    .bigPic__image{
+        width:85vw ;
+        height:auto;
+        margin: 5vh 0;
+
+
+    }
+}

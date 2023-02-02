@@ -1,0 +1,95 @@
+@media (max-width: 990px) {
+    .advantagesSection{ 
+        display: flex;
+        flex-direction:column ;
+        align-items:center ;
+        .Advantage{
+            margin:  10px ;
+            width: 90% ;
+            max-width: 400px ;
+            min-width: 300px ;
+        }
+    }
+}
+
+@media (min-width: 990px) {
+    .advantagesSection{ 
+        display:flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+            .Advantage{
+                display: flex;
+                flex-direction:column ;
+                align-items:center ;
+                width:27%;
+                min-width: 300px ;
+                margin:  10px ;
+            }
+        }
+}
+
+@media (min-width: 1150px){
+    .advantagesSection{ 
+        display:flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+            .Advantage{
+                display: flex;
+                flex-direction:column ;
+                align-items:center ;
+                width:27%;
+                min-width: 300px ;
+                margin:  10px ;
+            }
+        }
+}
+
+.advantagesSection{
+    
+    
+    float: center;
+    width: 90%;
+    min-width: 355px;
+    margin: 35px 3%;
+
+    .Advantage{
+        
+
+        .advantageTop{
+            background-color: $mainColor ;
+            width: 100% ;
+            padding:3% ;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+            .advantageTop__iconDiv{
+                display: flex;
+                flex-direction:column ;
+                align-items:center ;
+                color:white ;
+                margin:2% 4%;
+                
+            }
+            .advantageTop__title{
+                text-align: center;
+                color:white ;
+                margin:2% 4%;
+                font-family: $mainFontColor;
+            }
+        }
+        .advantageBottom{
+            background-color: $DarkMainColor ;
+            width: 100% ;
+            padding:3% ;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            .advantageBottom__description{
+                color:white ;
+                text-align: center;
+                margin: 1% 2%;
+            }
+        }
+    }
+}

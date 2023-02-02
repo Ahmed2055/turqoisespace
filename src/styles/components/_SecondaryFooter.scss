@@ -1,0 +1,112 @@
+@media (max-width: 990px) {
+    .secondaryFooter{
+        display: flex;
+        flex-direction:column ;
+        align-items:center ;
+        .SF__section{
+            margin:  10px ;
+            width: 90% ;
+            max-width: 500px ;
+            min-width: 300px ;
+        }
+    }
+}
+
+@media (min-width: 990px) {
+    .secondaryFooter{
+        display:flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 10px 5%;
+        .SF__section{
+            width: 30% ;
+            margin: 3% ;
+        }
+    }
+}
+
+@media (min-width: 1150px){
+    .secondaryFooter{
+        display:flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        .SF__section{
+            width: 30% ;
+            margin: 3% ;
+        }
+    }
+}
+
+.secondaryFooter{
+    margin:0;
+    border-top: 3px solid $lightGrayColor ;
+    .SF__section{
+        .SF__Title{
+            font-family: $mainFontColor;
+        }
+        .SF__text{
+            color: $darkGrayColor ;
+            font-family: $mainFontColor;
+        }
+        .SF__contacts{
+            margin:10px 5% ;
+            display: flex ;
+            flex-direction: row ;
+            align-items: center ;
+            .SF__contact{
+                margin :0 3%;
+                color: $darkGrayColor ;
+                display: flex ;
+                flex-direction: row ;
+                align-items: center ;
+                text-decoration:none;
+                &:hover{
+                    color:black;
+                }
+                .SF__contactText{
+                    margin-right:3px;
+                }
+            }
+        }
+        .SF__links{
+            margin:10px 2% ;
+            display:flex ;
+            flex-direction: column;
+            .SF__link{
+                margin:3px;
+                text-decoration:none;
+                color: $darkGrayColor ;
+                &:hover{
+                    color:black;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .SF__contactButtons{
+            display:flex ;
+            flex-direction: row;
+            align-items: center;
+            justify-content:baseline ;
+            .SF__contactButton{
+                border:1px solid $darkGrayColor ;
+                border-radius :10px ;
+                margin: 0 5px ;
+                cursor: pointer;
+                &:hover{
+                    border-color: black;
+                    background-color: black;
+                    color:white ;
+                }
+                .SF__contactButtonIcon{
+                    color: $darkGrayColor ;
+                    margin:5px ;
+                    &:hover{
+                        color:white ;
+                    }
+                }
+            }
+        }
+    }
+}

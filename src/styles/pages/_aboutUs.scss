@@ -1,0 +1,30 @@
+@media (max-width: 990px) {
+
+}
+
+@media (min-width: 990px) {
+
+}
+
+@media (min-width: 1150px){
+
+}
+
+
+.aboutUs__body{
+    padding: 0 8% ;
+    .aboutUs__passage{
+
+        .aboutUs__passageTitle{
+            @extend .flowRow;
+            .aboutUs__passageTitleName{
+                font-size: 1.1em;
+                margin-right: 1%;
+                font-family: $mainFontColor;
+            }
+        }
+        .aboutUs__passageText{
+            font-family: $mainFontColor;
+        }
+    }
+}

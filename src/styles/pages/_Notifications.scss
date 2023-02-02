@@ -1,0 +1,47 @@
+@media (max-width: 990px) {
+
+}
+
+@media (min-width: 990px) {
+
+}
+
+@media (min-width: 1150px){
+
+}
+
+
+.notifications{
+    
+    .notificationsBody{
+        margin: 3vh 7vw;
+        border: 1px solid  $lightGrayColor ;
+        border-radius: 10px ;
+        .notificationsBody__top{
+            @extend .flowRow ;
+            background-color: $lightGrayColor ;
+            padding: 1vh 3% ;
+            font-size: 1.5em ;
+            color: $darkGrayColor ;
+            .notificationsBody__topTitle{
+                font-size: 0.8em ;
+                font-family: $mainFontColor;
+                margin-right: 2% ;
+                color: $darkGrayColor ;
+            }
+        }
+        .notificationsBody__bottom{
+            .notificationsBody__bottomEmpty{
+                @extend .flowColumn ;
+                margin: 10vh 5% ;
+                font-size: 7em ;
+                color: $darkGrayColor ;
+                .notificationsBody__bottomEmptyTitle{
+                    color: $darkGrayColor ;
+                    font-size: 0.2em ;
+                    font-family: $mainFontColor;
+                }
+            }
+        }
+    }
+}

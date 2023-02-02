@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import './helpers/_variables';
+@import './components/_AddressSection';
+@import './components/_MobileMenu';
+@import './components/_VideoAd';
+@import './components/_Header';
+@import './components/_Footer';
+@import './components/_BigPic';
+@import './components/_Product';
+@import './components/_AdvantagesSection';
+@import './components/_SecondaryFooter';
+@import './components/_LoginComponent';
+@import './components/_PageTitle';
+@import './components/_CartItems';
+@import './components/_Spacer';
+@import './components/_ProductsSection';
+@import './components/_ProductsBody';
+@import './pages/_cart';
+@import './pages/_Home';
+@import './pages/_aboutUs';
+@import './pages/_WorkShops';
+@import './pages/_PrivateClasses';
+@import './pages/_Services';
+@import './pages/_CounsellingServices';
+@import './pages/_PrivateOrders';
+@import './pages/_Notifications';
